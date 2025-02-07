@@ -21,10 +21,10 @@ function Contact() {
           <p>📧 &nbsp; E-posta: &nbsp; brkkarahan288@gmail.com</p>
           {/*<p>📞 &nbsp; Telefon: &nbsp; +90 552 250 0028 </p>*/}
           <p>
-            💼 &nbsp; LinkedIn: &nbsp; <a href="https://www.linkedin.com/in/burak-karahan-54a86b250/" target="_blank" class="special-link">Burak Karahan / LinkedIn</a>
+            💼 &nbsp; LinkedIn: &nbsp; <a href="https://www.linkedin.com/in/burak-karahan-54a86b250/" target="_blank" className="special-link">Burak Karahan / LinkedIn</a>
           </p>
           <p>
-            💻 &nbsp; GitHub: &nbsp; <a href="https://github.com/BurakKarahan8" target="_blank" class="special-link">Burak Karahan / Github</a>
+            💻 &nbsp; GitHub: &nbsp; <a href="https://github.com/BurakKarahan8" target="_blank" className="special-link">Burak Karahan / Github</a>
           </p>
         </div>
       </motion.div>
