@@ -1,0 +1,39 @@
+/* Genel Sayfa Stilleri */
+body {
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sayfa İçeriği İçin */
+.container {
+  width: 100%;
+  margin: 10px auto 10px; /* Navbar sabit olduğu için üstten boşluk bıraktık */
+  padding: 20px;
+  background: linear-gradient(to right , #0f2027 , #424242 , #0f2027); /*29 95 47*/
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.pages { 
+  padding: 0px 100px; /* İçerik alanı için iç boşluk */
+  background-color: #272727; /* Arka plan rengi */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+}
+
+@media (max-width: 855px){
+  .pages{
+    padding: 0;
+  }
+}
+
+

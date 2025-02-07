@@ -1,0 +1,115 @@
+/* Navbar Genel Stili */
+.navbar {
+    background-color: #272727;  /* Daha açık bir arka plan rengi */
+    color: white; /* Yazı rengi beyaz */
+    padding: 5px 20px;    
+    position: fixed; /* Sabit konum */
+    width: 100%;
+    top: 0; /* Navbar'ı en üstte konumlandır */
+    left: 0;
+    right: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); /* Daha belirgin gölge */
+    box-sizing: border-box;
+    position: relative;
+}
+  
+  /* Navbar İçeriğini Ortala */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Menü Linkleri */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links li a {
+    color: rgb(255, 255, 255); /* Yazı rengi beyaz */
+    text-decoration: none;
+    padding: 10px 20px; /* Daha fazla iç boşluk */
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Geçiş efektleri */
+  }
+  
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover rengi */
+    border-radius: 5px; /* Hover sırasında kenar yuvarlama */
+    transform: scale(1.05); /* Hover sırasında büyütme efekti */
+  }
+  
+  
+  
+  /* Mobil Menü İçin */
+  .menu-toggle {
+    font-size: 1.8rem; /* Menü simgesi boyutu */
+    background: none; /* Arka planı kaldır */
+    border: none; /* Kenarlıkları kaldır */
+    color: white; /* Yazı rengi beyaz */
+    cursor: pointer; /* İmleci göster */
+    display: none; /* Varsayılan olarak gizle */
+  }
+  
+  @media (max-width: 855px) {
+    .menu-toggle {
+      display: block; /* Mobilde göster */
+    }
+  
+    .nav-links {
+      margin-top: 50px;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #333;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 2px solid #444;
+      z-index: 1;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Açılacak içerik alanı */
+  .content {
+    padding: 20px; /* İçerik alanı için iç boşluk */
+    background-color: #f4f4f4; /* Arka plan rengi */
+    border-top: 1px solid #ccc; /* Üst kenar rengi */
+    margin-top: 10px; /* Navbar ile içerik arasında boşluk */
+  }
+  
+  /* Aktif bağlantı stili */
+  .nav-links li a.active {
+    background-color: rgba(255, 255, 255, 0.1); /* Aktif bağlantı için daha koyu arka plan rengi */
+    border-radius: 5px; /* Aktif bağlantı için kenar yuvarlama */
+    color: #fff; /* Yazı rengini beyaz yap */ 
+  }
+  
